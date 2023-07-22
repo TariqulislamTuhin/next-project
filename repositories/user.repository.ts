@@ -26,7 +26,7 @@ async function create(request: CreateUserRequest) {
   });
 }
 
-async function userFindOne(id: number | string) {
+async function findOne(id: number | string) {
   return db.user.findFirstOrThrow({
     where: {
       OR: [
@@ -47,7 +47,7 @@ async function remove(id: number | string) {}
 const userRepository = {
   index,
   create,
-  findOne: userFindOne,
+  findOne,
   remove,
   update,
 };
