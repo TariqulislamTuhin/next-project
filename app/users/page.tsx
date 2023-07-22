@@ -1,4 +1,4 @@
-import { getUserAcrion } from "@app/actions/useraction";
+import { getUserAcrion } from "@app/actions/user-action";
 
 interface Iprops {}
 const Page = async () => {

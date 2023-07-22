@@ -1,5 +1,5 @@
 import { CreateUserRequest } from "@dtos/user.dto";
-import userRepository from "@repositories/user.repository";
+import userRepository from "@repositories/user-repository";
 import { revalidatePath } from "next/cache";
 
 export async function getUserAcrion() {
